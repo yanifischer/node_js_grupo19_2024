@@ -120,7 +120,7 @@ li .actions {
 
 li button {
     background-color: #045765;
-    background-image: url(public/editar.svg);
+    background-image: url(editar.svg);
     background-repeat: no-repeat;
    
     height:100px;
