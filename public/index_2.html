@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form CRUD</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion De Clientes</h1>
+    </header>
+    
+
+    
+     
+      <button id="mostrarCrearUsuarioFormBtn">  Crear Clientes</button>
+      
+        <form id="crearUsuarioForm" class="hidden" enctype="multipart/form-data">
+            <h2>Crear Clientes</h2>
+            <label for="nombre"> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido"> Apellido: </label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" required>
+
+
+            <label for="cel">Celular: </label>
+            <input type="number" id="cel" name="cel">
+
+            <button type="submit"> Crear Cliente</button>    
+        </form>
+
+
+        <!--form para ediotar un usuario-->
+        <form id="editarUsuarioForm" class="hidden" enctype="multipart/form-data">
+            <h2>Editar Cliente</h2>
+            <input type="hidden" id="editID" name="editID">
+
+            <label for="editNombre">Nombre: </label>
+            <input type="text" id="editNombre"  name="editNombre" required>
+
+            <label for="editApellido">Apellido: </label>
+            <input type="text" id="editApellido" name="editApellido" required>
+
+            <label for="editMail">Email: </label>
+            <input type="email" id="editMail" name="editMail" required>
+
+            <label for="editCel">Celular: </label>
+            <input type="number" id="editCel" name="editCel" required>
+
+            <button type="submit"> Actualizar Cliente </button>
+
+        </form>
+
+   
+
+        <!--Seccion para MOSTRAR TODOS LOS USUARIOS-->
+<section>
+    <h2>Lista de clientes</h2>
+</section>
+        
+        <button id="listarUsuariosBtn"> Clientes</button>
+   
+        <ul id="listaUsuarios">
+
+        </ul>
+
+<footer>
+    <button class="contacto-boton" onclick="location.href='login.html'">Volver</button>
+        
+</footer> 
+
+
+        <script src="script_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrolladores Disponibles</title>
+    <link rel="shortcut icon" href="imagenes/ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="contacto-boton" onclick="location.href='login.html'">
+      Iniciar Sección
+    </button>
+    <br/>
+
+     
+    <h1>TRABAJO INTEGRADOR CODO A CODO</h1>
+
+    <p class="bajada">
+      ¡Hola a todos! Este es el proyecto de nuestro grupo. La idea es una
+      especie de buscador de Dev's, en el cual cada uno tendra su caja de
+      presentaciòn y el usuario puede visitar el CV personalizado de cada uno, e
+      inclusive poder contactarse a traves del boton.
+    </p>
+
+    <h2 class="intro">Nuestros desarrolladores:</h2>
+
+    <div class="container">
+      <div class="developer">
+        <img src="imagenes/bobtoronja.svg" alt="Bob esponja" />
+        <h2>Russo Matias</h2>
+        <p>Responsable...</p>
+        <a href="individuales/cv.html" target="_blank"
+          >Ver más sobre Matias</a
+        >
+        <button class="contacto-boton" onclick="openForm()">
+          Ponte en contacto
+        </button>
+      </div>
+
+      <div class="developer">
+        <img src="imagenes/calamardob.svg" alt="Calamardo" />
+        <h2>Fernandez Erica</h2>
+        <p>Eficiente...</p>
+        <a href="individuales/erica.html">Ver más sobre Erica</a>
+        <button class="contacto-boton" onclick="openForm()">
+          Ponte en contacto
+        </button>
+      </div>
+
+      <div class="developer">
+        <img src="imagenes/patricio.svg" alt="Patricio" />
+        <h2>Fischer Yani</h2>
+        <p>Proactiva...</p>
+        <a href="individuales/yani.html">Ver más sobre Yani</a>
+        <button class="contacto-boton" onclick="openForm()">
+          Ponte en contacto
+        </button>
+      </div>
+
+      <div class="developer">
+        <img src="imagenes/Don_Cangrejo.svg" alt="Don cangrejo" />
+        <h2>Lardo Miguel</h2>
+        <p>Compañerismo...</p>
+        <a href="individuales/miguel/index.html">Ver más sobre Miguel</a>
+        <button class="contacto-boton" onclick="openForm()">
+          Ponte en contacto
+        </button>
+      </div>
+    </div>
+    <!-------------------------Separa del Formulario------------------------->
+    <div id="contactForm" class="formulario">
+      <form action="/submit_contact_form" class="form-container">
+        <h2>Contactar Desarrollador</h2>
+
+        <label for="name"><b>Nombre</b></label>
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          name="name"
+          required
+        />
+
+        <label for="email"><b>Correo</b></label>
+        <input
+          type="email"
+          placeholder="Ingrese su correo"
+          name="email"
+          required
+        />
+        
+        <label>Celular</label>
+        <input type="number" placeholder="Celular" required>
+        <br>
+        
+       
+        <h4>Horario disponible</h4>
+        <select name="lista" >
+          <option value="a">Mañana</option>
+          <option value="b">Tarde</option>
+          <option value="c">Noche</option>
+        </select>
+
+
+        <button type="submit" class="btn">Enviar</button>
+        <button type="button" class="btn cancel">Cerrar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+      <p>Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

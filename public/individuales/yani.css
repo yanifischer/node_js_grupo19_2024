@@ -1,0 +1,480 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, section, footer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 90px;
+    background-color: rgb(214, 173, 222);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#marca {
+    width: 250px;
+    height: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   margin-top: 20px;
+}
+
+header div.marca{
+    place-content: flex-start;
+}
+
+header div.marca nav{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+
+#menu, #menu-check{
+    display: none;
+}
+
+h1 {
+    margin-top: 20px;
+    color: rgb(197, 5, 226);
+    font-size: 2em;
+    font-family: 'Rubik Gemstones', cursiva;
+}
+#botonera{
+    width: 800px;
+    height: 30px;
+    background-color: rgb(255, 155, 223);
+    margin: auto;
+    border-radius: 20px;
+
+}
+#botonera ul{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#botonera ul li a{
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#presentacion{
+    height: 600px;
+    padding-top: 90px;
+    background-color: rgb(255, 209, 255);
+   
+}
+
+.descripcion{
+    width: 900px;
+    height: 300px;
+    margin: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 5px 10px 7px rgba(250, 7, 193, 0.5), -5px -10px 7px rgba(154, 198, 20, 0.5);
+    float: left;
+}
+
+
+
+
+#contactos {
+    height: 350px;
+    padding-top: 30px;
+    background: -webkit-linear-gradient(top, purple, pink);
+}
+
+.flex-container{
+    height: 40vh;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-items: center;
+    
+    
+}
+
+
+.flex-items{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(189, 76, 145);
+    box-shadow: 5px 10px 7px rgba(155, 160, 8, 0.5), -5px -10px 7px rgba(154, 198, 20, 0.5);
+    padding: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(22, 9, 107);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(6, 94, 50);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+h5 {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(236, 54, 154);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+#listado{
+    height: 500Px;
+    background-color: rgb(248, 190, 245);
+}
+
+
+.caja-principal1, .caja-principal2 , .caja-principal3 {
+    width: 80%;
+    max-width: 250px;
+    background: #fca8ef;
+    border-radius: 10px;
+    /*padding: 10px 20px;*/
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    float: left;
+    margin: 10px;
+}
+.caja-principal4, .caja-principal5 , .caja-principal6 {
+    width: 80%;
+    max-width: 250px;
+    background: #fca8ef;
+    border-radius: 10px;
+    /*padding: 10px 20px;*/
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    float:right;
+    margin: 10px;
+}
+
+.imagen{
+    flex-shrink: 0;
+    width: 100px;
+}
+
+.imagen img{
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+.texto{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+    color: rgb(169, 40, 121);
+    text-align: center;
+}
+
+footer {
+    height: 90px;
+    background-color: rgb(235, 164, 249);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  
+
+    header, section, footer {
+        width: 580px;
+    }
+
+    header {
+        height: 130px;
+    }
+
+    footer {
+        height: 130px;
+    }
+    
+
+    #marca {
+        width: 250px;
+        height: 60px;
+    }
+    h1{
+        margin: 0;
+        padding: 10px;
+    }
+       
+    #botonera{
+        width: 550px;
+    }
+  
+    
+    
+    #presentacion{
+        height: 600px;
+    }
+
+    .descripcion{
+        width: 500px;
+        margin: 10px;
+        height: 300px;
+        float:none;
+
+    }
+    
+    #contactos {
+        height: 700px;
+    }
+
+   
+    
+    .flex-container{
+        height: 50vh;
+    }
+
+    
+    
+     
+#listado{
+        height: 1300Px;
+ }
+    
+.caja-principal1, .caja-principal2 , .caja-principal3 {
+    width: 93%;
+    max-width: none;
+    padding: 15px;
+    float: none;
+    margin: 15px;
+}
+.caja-principal4, .caja-principal5 , .caja-principal6 {
+    width: 93%;
+    max-width: none;
+    padding: 15px;
+    float: none;
+    margin: 15px;
+}
+    
+
+    header div.marca, header div.marca ul, header div.marca li{
+        display: inline;
+    }
+
+    header div.marca nav{
+        width: 100%;
+        display: inline;
+    }
+
+
+}
+
+@media all and (max-width: 599px) {
+   
+    header, section, footer {
+        width: 98%;  
+    }
+    
+    header {
+        width: 98%;
+        height: auto;
+        position: relative;
+            
+    }
+    
+    footer {
+        width: 98%;
+        height: auto;
+        position: relative;
+            
+    }
+
+    #marca {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    #botonera{
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 5%;
+    }
+
+    #botonera ul{
+        display: block;  
+    }
+
+    #botonera ul li a{
+        width: 90%;
+        display: block;
+        text-align: center;
+        padding: 3%;
+        
+    }
+
+    #presentacion{
+        height: auto;
+        padding-top: 0;
+       
+        margin-top: 0;
+    }
+
+    .descripcion{  
+        width: 80%;
+        height: auto;
+        margin: 5%;
+        float: none;
+    }
+    #contactos {
+        height: auto;
+        padding-top: 2%;
+    }
+   
+    
+    .flex-container{
+        height: auto;
+   
+    }
+    
+
+ 
+    
+    .empresa{
+        width: 90%;
+        height: none;
+        float: none;
+    }
+    .datos2{
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        clear: none;
+    }   
+
+    #listado{
+        width: 100%;
+        height: auto;
+    }
+
+    #contactos{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+     
+    .caja-principal1, .caja-principal2 , .caja-principal3 {
+        width: 90%;
+        height: auto;
+        padding: 0;
+    
+    }
+    .caja-principal4, .caja-principal5 , .caja-principal6 {
+        width: 90%;
+        height: auto;
+        padding: 0;
+    }
+   
+
+    header h1{
+        margin:0;
+    }
+    
+    header h1 a{
+        padding: 0;
+    }
+
+    header div.marca{
+        display: flex;
+        place-content: space-between;
+    }
+
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        color: var(--color-1);
+        background-color: #f83636;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid var(--color-1);
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 9999;
+    }
+
+    #menu:hover{
+        color:aquamarine;
+        background: #838d1e;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header div.marca nav{
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100%;
+        background-color: var(--bgcolor-2);
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        opacity: 0.8;
+        color: var(--text-color-3);
+
+    }
+
+    header div.menu nav ul a{
+        color: var(--text-color-3);
+        background: none;
+
+    }
+    header div.menu nav ul {
+        display: block;
+        text-align: right;
+    }
+    
+
+}

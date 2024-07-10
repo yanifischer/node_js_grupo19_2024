@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <!-- css tipografia externa  de fonts google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <!-- fontawesome iconos-->
+    <script src="https://kit.fontawesome.com/1cd02b6dcd.js" crossorigin="anonymous"></script>
+    <!-- css mio-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="marca"> 
+            <h1>ADMINISTRADORES</h1>
+        </div>
+    </header>
+   
+    <section class="admin-section">
+        <h2>Validar Administrador</h2>
+        <form name="login" class="form_adm"> 
+            <div class="form-group">
+                <label for="usuario">USUARIO:</label>
+                <input name="usuario" type="text" class="input" id="usuario" />
+            </div>
+            <div class="form-group">
+                <label for="password">CONTRASEÑA:</label>
+                <input name="password" type="password" class="input" id="password" />
+            </div>
+            <div class="button-group">
+                <input value="Entrar" target="_parent" onclick="Login()" type="button" class="button"/> 
+                <input type="reset" name="Borrar" id="Borrar" value="Borrar" class="button" />
+            </div>
+        </form> 
+        <button class="contacto-boton" onclick="location.href='index.html'">Volver</button>
+    </section>
+
+    <script language="JavaScript"> 
+        function Login(){ 
+            var usuario = document.login.usuario.value; 
+            var password = document.login.password.value; 
+            if(usuario == "admin" && password == "admin"){ 
+                window.location = "index_2.html"
+            } else {
+                alert("ADMINISTRADOR INCORRECTO, vuelva a cargar usuario y contraseña.");
+            }
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #112420; /* Cambiamos el color de fondo */
+    color:hsl(0, 28%, 95%);
+}
+header, section, footer {
+    text-align:center;
+    background-color: #180c4e;
+    border: 1px solid #2292f5;
+}
+ 
+section,aside {
+    margin-top: 5px;
+    padding: 10px;
+    -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+}
+
+aside {
+    float: right;
+    width: 45%;
+    background:#ccc;
+    color: #333;
+}
+ 
+
+h1, h2 {
+    color: hsl(0, 28%, 95%);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+form {
+    background: #041640;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px  #0d8770; 
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #0d8770; /* Cambiamos el color de fondo al enfocar */
+    outline: none;
+}
+
+
+button {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #224740;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: hsl(155, 91%, 22%);
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: hsl(155, 84%, 75%);
+    color: #f7f3f3;
+    background: #0c4e1a;
+}
+
+
+
+li {
+    color:#e7e5ec;
+    background-color: #180c4e;
+   
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+li button {
+    background-color: #045765;
+    background-image: url(../public/editar.svg);
+    background-repeat: no-repeat;
+   
+    height:100px;
+    width:100px;
+    background-position: center;
+    background-size: 80px 80px;
+}
+
+
+li button:hover {
+    background-color: #639fde;
+}
+
+
+li .delete {
+    background-color: #12c8f6;
+    background-image: url(../public/eliminar.svg);
+    background-repeat: no-repeat;
+    height:100px;
+    width:100px;
+    background-position: center;
+    background-size: 80px 80px;
+   
+}
+
+
+li .delete:hover {
+    background-color: #03555a;
+}
+
