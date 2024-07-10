@@ -120,7 +120,7 @@ li .actions {
 
 li button {
     background-color: #045765;
-    background-image: url("../public/editar.svg");
+    background-image: url(public/editar.svg);
     background-repeat: no-repeat;
    
     height:100px;
@@ -137,7 +137,7 @@ li button:hover {
 
 li .delete {
     background-color: #12c8f6;
-    background-image: url(public/eliminar.svg);
+    background-image: url(eliminar.svg);
     background-repeat: no-repeat;
     height:100px;
     width:100px;
